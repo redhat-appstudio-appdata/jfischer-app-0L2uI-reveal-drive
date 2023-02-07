@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-zuho
+  namespace: jfischer-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:b188111aacbf178bb16b439fb5763c5ac4e2d55110d8b49c865215fa1c36a380
+        name: container-image
+        resources: {}
+status: {}
