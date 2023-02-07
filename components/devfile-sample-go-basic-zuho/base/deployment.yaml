@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-go-basic-zuho
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:jfischer-tenant-devfile-sample-go-basic-zuho
+      - image: quay.io/redhat-appstudio/user-workload@sha256:b188111aacbf178bb16b439fb5763c5ac4e2d55110d8b49c865215fa1c36a380
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
